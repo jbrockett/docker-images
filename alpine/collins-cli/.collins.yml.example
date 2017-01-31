@@ -1,0 +1,5 @@
+---
+host: https://collins.iata.company.com
+username: myuser
+# omit password to have collins auth prompt you
+password: mypass
