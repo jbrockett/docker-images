@@ -1,8 +1,8 @@
-FROM alpine:3.5
+FROM alpine:3.7
 
 MAINTAINER Jeremy Brockett
 
-RUN apk add --no-cache ruby-json && \
+RUN apk add --no-cache ruby-json ruby-io-console && \
     gem install --no-rdoc --no-ri collins-cli
 
 ENTRYPOINT ["collins"]
