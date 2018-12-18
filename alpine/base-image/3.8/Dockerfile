@@ -1,6 +1,6 @@
 FROM alpine:3.8
 MAINTAINER Jeremy Brockett
 
-RUN apk --no-cache add dumb-init
+RUN apk --no-cache add tini
 
-ENTRYPOINT ["/usr/bin/dumb-init", "--"]
+ENTRYPOINT ["/sbin/tini", "--"]
